@@ -1,0 +1,2 @@
+# bingfind
+subdomain from bing
