@@ -1,10 +1,5 @@
 #! /usr/bin/env python3
 # -*- coding:utf-8 -*-
-"""
-A tool to collect subdomains using the Bing search engine.
-'Created on Tues June 5 17:31:12 2023'
-__author__ = 'Af10wer'
-"""
 
 import sys,time,random,argparse,textwrap
 import http.cookiejar
@@ -69,7 +64,7 @@ if __name__ == '__main__':
                 description = 'Subdomain collection',
                 formatter_class = argparse.RawDescriptionHelpFormatter,
                 epilog = textwrap.dedent('''Example:
-            subdomain_collect_bing.py baidu.com [-p 20] [-f result.txt]
+            bingfinder.py baidu.com [-p 20] [-f result.txt]
             ''')
         )
         parser.add_argument('domain',help='Type the domain.')
