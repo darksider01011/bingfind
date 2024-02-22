@@ -64,12 +64,11 @@ if __name__ == '__main__':
                 description = 'Subdomain collection',
                 formatter_class = argparse.RawDescriptionHelpFormatter,
                 epilog = textwrap.dedent('''Example:
-            bingfinder.py baidu.com [-p 20] [-f result.txt]
+            bingfinder.py baidu.com -p 25 
             ''')
         )
-        parser.add_argument('domain',help='Type the domain.')
-        parser.add_argument('-p','--pages',type=int,default=20,help='Specifies the number of pages to crawl.')
-        parser.add_argument('-f','--filepath',help='Specify the local file stored in the collected subdomains.')
+        parser.add_argument('domain',help='Type the domain name.')
+        parser.add_argument('-p','',type=int,default=20,help='Specifies the number of pages to crawl.')
         args = parser.parse_args()
         try:
                 subdomain_collect_by_bing(args.domain,args.pages,args.filepath)
