@@ -64,7 +64,7 @@ if __name__ == '__main__':
                 description = 'Subdomain collection',
                 formatter_class = argparse.RawDescriptionHelpFormatter,
                 epilog = textwrap.dedent('''Example:
-            bingfinder.py baidu.com -p 25 
+            bingfinder.py bing.com -p 25 
             ''')
         )
         parser.add_argument('domain',help='Type the domain name.')
